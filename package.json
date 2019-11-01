@@ -1,0 +1,24 @@
+{
+  "name": "sinhala-script",
+  "version": "0.0.1",
+  "description": "JavaScript sinhala translation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "concat-cli -f macros.js app.js -o compiled.js && sjs compiled.js > build.js && node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supuncodes/sinhala-script.git"
+  },
+  "author": "Supun Dissanayake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supuncodes/sinhala-script/issues"
+  },
+  "homepage": "https://github.com/supuncodes/sinhala-script#readme",
+  "dependencies": {
+    "@sweet-js/cli": "^3.0.13",
+    "concat-cli": "^4.0.0"
+  }
+}
