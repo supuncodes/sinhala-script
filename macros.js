@@ -10,6 +10,12 @@ syntax විචල්‍ය = function (ctx) {
     return #`let ${name} = ${value}`
 };
 
+syntax නියතය = function (ctx) {
+    let name = ctx.next().value;
+    ctx.next(); 
+    let value = ctx.expand('expr').value;
+    return #`const ${name} = ${value}`
+};
 
 syntax ක්‍රියාවලිය = function (ctx) {
   let name = ctx.next().value;
@@ -43,9 +49,3 @@ syntax ලියන්න = function (ctx) {
     const text = ctx.next().value;
     return #`console.log(${text})`;
 };
-
-Array.prototype.තියනවාද = function(element){
-    return this.includes(element);
-}
-
-module.exports = {};
