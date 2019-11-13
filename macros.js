@@ -49,3 +49,29 @@ syntax ලියන්න = function (ctx) {
     const text = ctx.next().value;
     return #`console.log(${text})`;
 };
+
+syntax ඇතිතුරු = function (ctx) {
+    let params = ctx.next().value;
+    return #`while ${params}`;
+};
+
+syntax කඩන්න = function (ctx) {
+    return #`break`;
+};
+
+syntax දිගටම = function (ctx) {
+    return #`continue`;
+};
+
+syntax සාමාන්ය = function (ctx) {
+    return #`default`;
+};
+
+
+syntax මෙහි = function (ctx) {
+    return #`this`;
+};
+
+syntax නව = function (ctx) {
+    return #`new`;
+};
