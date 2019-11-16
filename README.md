@@ -39,6 +39,12 @@
 | පල | return      |
 | ඔවු | true        |
 | නෑ | false        |
+| ඇතිතුරු | while    |
+| කඩන්න | break    |
+| දිගටම | continue    |
+| සාමාන්ය | default    |
+| මෙහි | this    |
+| නව | new    |
 
 
 # බලපත්රය
